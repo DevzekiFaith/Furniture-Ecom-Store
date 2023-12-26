@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.FooterSection {
+  background-color: rgb(16, 29, 33);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  margin-top: 3rem;
+}
+.FooterSection .FooterContent h4 {
+  color: #c19a6b;
+  margin-top: -3.5rem;
+}
+.FooterSection .FooterC1 h5 {
+  color: whitesmoke;
+}
+.FooterSection .FooterC1 ul {
+  margin-top: 1rem;
+}
+.FooterSection .FooterC1 ul li {
+  list-style: none;
+  color: whitesmoke;
+}
+.FooterSection .FooterC2 ul {
+  margin-top: 1rem;
+}
+.FooterSection .FooterC2 h5 {
+  color: whitesmoke;
+  margin-top: -2.3rem;
+}
+.FooterSection .FooterC2 li {
+  list-style: none;
+  color: whitesmoke;
+}
+.FooterSection .NewsLetter {
+  margin-top: -4.2rem;
+  position: relative;
+}
+.FooterSection .NewsLetter .LabelTag {
+  color: whitesmoke;
+}
+.FooterSection .NewsLetter .InputTag {
+  width: 250px;
+  height: 1.6rem;
+}
+.FooterSection .NewsLetter button {
+  position: absolute;
+  right: 0.5rem;
+  color: white;
+  margin-top: 0.2rem;
+  width: 40%;
+  font-size: 0.8rem;
+  text-align: left;
+  background-color: #c19a6b;
+  border: none;
+  padding: 3px 4px;
+  border-radius: 6px;
+}
+.FooterSection .NewsLetter button img {
+  width: 12px;
+  margin-left: 0.6rem;
+}
+
+@media (max-width: 425px) {
+  .FooterSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    gap: 2rem;
+  }
+  .FooterSection .FooterContent h4 {
+    font-size: 26px;
+    margin-top: -0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .FooterSection .FooterC1 {
+    margin-top: -2rem;
+    margin-left: 2rem;
+  }
+  .FooterSection .FooterC2 {
+    margin-top: 2rem;
+    margin-left: -1rem;
+    margin-bottom: 2rem;
+  }
+  .FooterSection .NewsLetter {
+    margin-top: -0.5rem;
+  }
+  .FooterSection .NewsLetter .LabelTag {
+    margin-left: 2.3rem;
+  }
+}

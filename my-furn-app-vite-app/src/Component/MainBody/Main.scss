@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.MainClassOne {
+  // background-color: rebeccapurple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .MainClassContent {
+    margin-top: 2rem;
+    margin-left: 5rem;
+
+    h6{
+      font-family: "chelsea Market";
+      color: #c19a6b;
+      margin-bottom: .8rem;
+    }
+
+    h1 {
+      width: 200px;
+      font-size: 20px;
+      font-family: "chelsea Market";
+    }
+
+    p {
+      width: 300px;
+      font-family: "chelsea Market";
+      margin-top: 1rem;
+      font-size: 10px;
+      font-weight: 300;
+      color: green;
+    }
+
+    button{
+      margin-top: 2rem;
+      border: none;
+      width: 40%;
+      background-color: #c19a6b;
+      height: 1.8rem;
+      // border-radius: .7rem;
+      box-shadow: 0 2px 4px gray;
+      color: whitesmoke;
+      cursor: pointer;
+      transition: background-color 1.15s;
+      font-family: "chelsea Market";
+      font-size: 12px;
+    }
+
+    button:hover{
+      background-color: green;
+    }
+  }
+
+  .MainClassImage {
+    width: 580px;
+    margin-top: 2.5rem;
+    margin-right: 5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .MainClassOne {
+    flex-direction: column;
+
+    & .MainClassContent {
+      margin-left: -5.5rem;
+
+      p{
+        width: 220px;
+      }
+
+
+    }
+
+    & .MainClassImage {
+      width: 310px;
+      margin-right: 0.7rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

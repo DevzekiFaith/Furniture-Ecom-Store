@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Section4 .Section4Flex h6 {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-family: "chelsea Market";
+}
+.Section4 .Section4Flex h3 {
+  text-align: center;
+  font-family: "chelsea Market";
+}
+.Section4 .ImageGrid {
+  width: 280px;
+}
+.Section4 .ImageGrid p {
+  text-align: center;
+  font-family: "chelsea Market";
+  font-size: 16px;
+}
+.Section4 .ImageGrid h6 {
+  text-align: center;
+  font-family: "chelsea Market";
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.Section4 .ImageGridFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 425px) {
+  .Section4 .ImageGridFlex {
+    flex-direction: column;
+  }
+  .Section4 .ImageGridFlex .ImageGrid {
+    width: 360px;
+  }
+  .Section4 .ImageGridFlex .ImageGrid img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: -2rem;
+  width: 100%;
+}
+
+body {
+  height: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Main1 {
+  width: 100%;
+}
+.Main1 .MajorP {
+  background-color: whitesmoke;
+  padding: 0.5rem 2rem;
+  margin-top: -4.2rem;
+  height: 3rem;
+  position: fixed;
+  width: 93.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.Main1 .MajorP h1 {
+  font-size: 18px;
+  font-family: "chelsea Market";
+  color: #c19a6b;
+}
+.Main1 .MajorP ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-left: -10rem;
+}
+.Main1 .MajorP a {
+  color: #c19a6b;
+  list-style: none;
+  text-decoration: none;
+  font-family: "chelsea Market";
+  font-size: 12px;
+}
+.Main1 .MajorP button {
+  width: 68px;
+  border-radius: 8px;
+  height: 25px;
+  border: none;
+}
+.Main1 .MajorP .LogIn {
+  margin-right: 1.8rem;
+  background-color: #c19a6b;
+  color: white;
+}
+.Main1 .MajorP .SignIn {
+  background: none;
+  border: 1px solid #c19a6b;
+  color: #c19a6b;
+}
+.Main1 .HeroPage {
+  background: url("../assets/Component 1.png") no-repeat;
+  background-image: cover;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  margin-top: 4.2rem;
+  z-index: -10;
+  position: relative;
+}
+.Main1 .HeroPage .HeroContent {
+  background: transparent;
+  position: absolute;
+  top: 6rem;
+  left: 31rem;
+  width: 28rem;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+}
+.Main1 .HeroPage .HeroContent h1 {
+  color: #c19a6b;
+  margin-top: 4rem;
+  text-align: center;
+  font-family: "chelsea Market";
+  font-size: 24px;
+  margin-left: -1rem;
+}
+.Main1 .HeroPage .HeroContent p {
+  width: 500px;
+  color: white;
+  text-align: center;
+  margin-left: -4rem;
+  font-family: "chelsea Market";
+  font-size: 12px;
+  margin-top: 18px;
+}
+.Main1 .HeroPage .HeroContent .GetStarted {
+  text-align: center;
+  margin-left: 6.8rem;
+  margin-top: 2rem;
+  border: none;
+  width: 35%;
+  height: 2rem;
+  background-color: #c19a6b;
+  color: whitesmoke;
+  font-family: "chelsea Market";
+  font-size: 12px;
+}
+
+@media (max-width: 425px) {
+  .Main1 {
+    width: 100%;
+    padding: 0;
+  }
+  .Main1 .MajorP {
+    padding: 0;
+    width: 100%;
+    margin-left: -2rem;
+  }
+  .Main1 .MajorP h1 {
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+  }
+  .Main1 .MajorP ul {
+    display: none;
+  }
+  .Main1 .MajorP .SignLogIn {
+    margin-top: 0.7rem;
+  }
+  .Main1 .MajorP .SignLogIn .SignIn {
+    margin-left: -1rem;
+    margin-right: 2rem;
+  }
+  .Main1 .HeroPage {
+    background-color: #c19a6b;
+    position: relative;
+  }
+  .Main1 .HeroPage .HeroContent {
+    position: absolute;
+    left: -4rem;
+  }
+  .Main1 .HeroPage .HeroContent h1 {
+    margin-left: 1rem;
+  }
+  .Main1 .HeroPage .HeroContent p {
+    width: 300px;
+    margin-left: 2.8rem;
+  }
+  .Main1 .HeroPage .HeroContent .GetStarted {
+    margin-left: 8rem;
+  }
+}

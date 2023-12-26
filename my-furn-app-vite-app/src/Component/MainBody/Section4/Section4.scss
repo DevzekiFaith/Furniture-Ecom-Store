@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Section4 {
+  // background-color: red;
+
+  & .Section4Flex {
+    // background-color: blue;
+
+    h6 {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-family: "chelsea Market";
+    }
+
+    h3 {
+      text-align: center;
+      font-family: "chelsea Market";
+    }
+  }
+
+  & .ImageGrid {
+    // background-color: pink;
+    width: 280px;
+
+    p {
+      text-align: center;
+      font-family: "chelsea Market";
+      font-size: 16px;
+    }
+
+    h6 {
+      text-align: center;
+      font-family: "chelsea Market";
+      font-size: .5rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  & .ImageGridFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .Section4 {
+    // background-color: blue;
+
+    & .ImageGridFlex {
+      flex-direction: column;
+
+      & .ImageGrid {
+        width: 360px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

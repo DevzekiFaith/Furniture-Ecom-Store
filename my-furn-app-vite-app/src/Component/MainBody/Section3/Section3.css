@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: -2rem;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Section3 {
+  margin-top: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.8rem;
+}
+.Section3 .Section3Content {
+  width: 363px;
+}
+.Section3 .Section3Content .ItemPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 6rem;
+  gap: 4rem;
+}
+.Section3 .Section3Content .ItemPrice .ItemPriceContent {
+  margin-left: -5.5rem;
+}
+.Section3 .Section3Content .ItemPrice .ItemPriceContent h5 {
+  color: black;
+  font-size: 11px;
+  font-family: "chelsea Market";
+}
+.Section3 .Section3Content .ItemPrice .ItemPriceContent p {
+  color: black;
+  font-family: "chelsea Market";
+  font-size: 13px;
+}
+.Section3 .Section3Content .ItemPrice span {
+  color: red;
+  margin-right: 1.2rem;
+  font-family: "chelsea Market";
+}
+.Section3 .Section3Content .Button .Cart {
+  border: none;
+  width: 40%;
+  height: 2rem;
+  background-color: #c19a6b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Section3 .Section3Content .Button .Icon2 {
+  margin-right: 0.5rem;
+}
+.Section3 .Section3Content .Button .SaveItem {
+  border: none;
+  border-radius: 5px;
+  width: 40%;
+  height: 2rem;
+  margin-left: 4.5rem;
+  border: 1.2px solid #c19a6b;
+  background: none;
+  cursor: pointer;
+}
+.Section3 .Section3Content .Button .SaveItem1 {
+  margin-right: 0.5rem;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  .Section3 {
+    flex-direction: column;
+  }
+}

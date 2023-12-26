@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+
+#root {
+  max-width : 1440px;
+  margin    : 0 auto;
+  padding   : 2rem;
+  margin-top: -2rem;
+  width     : 100%;
+}
+
+body {
+  height: 1200px;
+}
+
+* {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+.Main1 {
+  // background-color: red;
+  width: 100%;
+
+  & .MajorP {
+    // background: transparent;
+    background-color: whitesmoke;
+    padding         : 0.5rem 2rem;
+    margin-top      : -4.2rem;
+    height          : 3rem;
+    position        : fixed;
+    width           : 93.5%;
+    display         : flex;
+    justify-content : space-between;
+
+    h1 {
+      font-size  : 18px;
+      font-family: "chelsea Market";
+      color      : #c19a6b;
+    }
+
+    ul {
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+      gap            : 2rem;
+      margin-left    : -10rem;
+    }
+
+    a {
+      color          : #c19a6b;
+      list-style     : none;
+      text-decoration: none;
+      font-family    : "chelsea Market";
+      font-size      : 12px;
+    }
+
+    button {
+      width        : 68px;
+      border-radius: 8px;
+      height       : 25px;
+      border       : none;
+    }
+
+    & .LogIn {
+      margin-right    : 1.8rem;
+      background-color: #c19a6b;
+      color           : white;
+    }
+
+    & .SignIn {
+      background: none;
+      border    : 1px solid #c19a6b;
+      color     : #c19a6b;
+    }
+  }
+
+  & .HeroPage {
+    background         : url("../assets/Component\ 1.png") no-repeat;
+    background-image   : cover;
+    background-position: center;
+    background-size    : cover;
+    height             : 500px;
+    margin-top         : 4.2rem;
+    z-index            : -10;
+    position           : relative;
+
+    & .HeroContent {
+      background    : transparent;
+      position      : absolute;
+      top           : 6rem;
+      left          : 31rem;
+      width         : 28rem;
+      padding       : 0 2rem;
+      padding-bottom: 2rem;
+
+      h1 {
+        color      : #c19a6b;
+        margin-top : 4rem;
+        text-align : center;
+        font-family: "chelsea Market";
+        font-size  : 24px;
+        margin-left: -1rem;
+      }
+
+      p {
+        width      : 500px;
+        color      : white;
+        text-align : center;
+        margin-left: -4rem;
+        font-family: "chelsea Market";
+        font-size  : 12px;
+        margin-top : 18px;
+      }
+
+      & .GetStarted {
+        text-align      : center;
+        margin-left     : 6.8rem;
+        margin-top      : 2rem;
+        border          : none;
+        width           : 35%;
+        height          : 2rem;
+        background-color: #c19a6b;
+        color           : whitesmoke;
+        font-family     : "chelsea Market";
+        font-size       : 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .Main1 {
+    // background-color: red;
+    width  : 100%;
+    padding: 0;
+
+    & .MajorP {
+      // background-color: blue;
+      padding    : 0;
+      width      : 100%;
+      margin-left: -2rem;
+
+      h1 {
+        margin-left: 2rem;
+        margin-top : 0.7rem;
+      }
+
+      ul {
+        display: none;
+      }
+
+      .SignLogIn {
+        margin-top: 0.7rem;
+
+        & .SignIn {
+          margin-left : -1rem;
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .HeroPage {
+      background-color: #c19a6b;
+      position        : relative;
+
+      & .HeroContent {
+        position: absolute;
+        left    : -4rem;
+
+        h1 {
+          margin-left: 1rem;
+        }
+
+        p {
+          width      : 300px;
+          margin-left: 2.8rem;
+        }
+
+        & .GetStarted {
+          margin-left: 8rem;
+        }
+      }
+    }
+  }
+}

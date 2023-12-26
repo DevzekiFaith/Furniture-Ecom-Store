@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.GridTopic{
+  // background-color: pink;
+  margin-top: 3rem;
+
+
+  & .GridTopicContent{
+    // background-color: blue;
+
+    h6{
+      text-align: center;
+      font-family: "chelsea Market";
+    }
+
+    h1{
+      text-align: center;
+      font-size: 14px;
+      font-family: "chelsea Market";
+    }
+
+  }
+}
